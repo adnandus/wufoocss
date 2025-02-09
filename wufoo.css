@@ -1,1 +1,177 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : Example Custom CSS : DinoMaster!
+ URL : http://wufoo.com
+
+ Last Updated : April 1, 2011
+
+- - - - - - - - - - - - - - - - - - - - - 
+
+INSTRUCTIONS
+1. Copy / Paste all or portions of these
+CSS rules into "custom.css".
+
+2. Experiment and play.
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - Default - - - */
+
+/* Logo */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#logo a {
+	background-image:url('http://wufoo.com/images/themes/logos/shark.png'); min-height:0; height:40px
+}
+* html #logo a {/* IE6 png Support */
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://wufoo.com/images/themes/logos/shark.png", sizingMethod="crop");
+}
+
+/* Backgrounds */
+html {
+	background-image:none;background-color:#99cc00
+}
+#logo {
+	background-image:none;background-color:#669900
+}
+#container {
+	background:#FFFFFF
+}
+.wufoo input.text, .wufoo textarea.textarea {
+	all: unset;
+	color: rgba(0, 0, 0, 0.7);
+	background-color: #FFFFFF00;
+	border-color: #e8e8e8;
+	transition-duration: 0.1s;
+	border-style: solid;
+	border-width: 0px 0px 2px 0px;
+	width: 100% !important;
+	height: 45px;
+	line-height: 45px;
+	padding: 0px 0px 0px 0px;
+	border-radius: 2px 2px 2px 2px;
+}
+
+.wufoo textarea.textarea {
+	min-height: 10rem;
+}
+
+.wufoo input.text:focus, .wufoo textarea.textarea:focus {
+	color: rgb(52, 101, 170);
+  	background-color: #FFFFFF00;
+  	border-color: rgb(52, 101, 170);
+}
+
+.wufoo .focused {
+	background-color: unset;
+}
+
+.wufoo li.focused {
+	background-color:rgb(248, 250, 254) !important;
+	border-radius: 10px;
+
+.wufoo .instruct {
+	background-color:#F5F5F5
+}
+
+/* Borders */
+#container {
+	border:0 solid #cccccc
+}
+.wufoo .info {
+	border-bottom:0 1px dotted #CCCCCC
+}
+.wufoo .instruct {
+	border:1px solid #e6e6e6
+}
+
+/* Typography */
+.wufoo .info h2 {
+	font-size: 160%;
+	font-family: "Montserrat", serif;
+	color: #000000;
+}
+.wufoo .info div {
+	font-size: 95%;
+	font-family: "Montserrat", serif;
+	color: #444444;
+}
+
+imput#saveform {
+	padding: 10px 20px 10px 20px;
+	cursor: pointer;
+	background-color: transparent;
+	background-image: linear-gradient(45deg, rgb(251, 204, 100) 0%, rgb(255, 230, 164) 100%);
+ 	-webkit-transition-duration: 0.4s;
+  	transition-duration: 0.4s;
+  	-webkit-animation-duration: 0.4s;
+  	animation-duration: 0.4s;
+  	border-color: #52381F80;
+	border-width: 2px;
+	color: rgb(52, 101, 170);
+  	box-shadow: 0px 15px 40px 0px rgba(63.9, 99.9, 164.9, 0.25);
+  	border-style: solid;
+  	border-width: 2px 2px 2px 2px;
+  	border-radius: 10px 10px 10px 10px;
+}
+
+.wufoo .section h3 {
+	font-size: 110%;
+	font-family: "Montserrat", serif;
+	background: #FFFFFF;
+	color: #000000;
+}
+.wufoo .section div {
+	font-size: 85%;
+	font-family: "Montserrat", serif;
+	color: #444444
+}
+.wufoo label.desc, .wufoo legend.desc {
+	font-size: 1rem;
+	font-family: "Montserrat", serif;
+	font-weight: 800;
+	color: #444444;
+
+}
+.wufoo li div, .wufoo li div label, .wufoo li span label {
+	font-family: "Montserrat", serif;
+	color: #444444;
+	text-align: left;
+}
+
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice, .wufoo li span {
+	font-size: 1rem%;
+	font-family: "Montserrat", serif;
+	color:#333333;
+}
+.wufoo label.choice {
+	color:#444444;
+}
+.wufoo .instruct {
+	font-size: 80%;
+	font-family: "Montserrat", serif;
+	color:#444444;
+}
+
+li, div {
+    width: 100%;
+}
+
+.name > span {
+    width: calc(50% - 3.9px);
+}
+
+imput {
+    width: 100%;
+}
+
+.field {
+    width: 100%
+}
+
+label {
+    text-align: left;
+}
 
